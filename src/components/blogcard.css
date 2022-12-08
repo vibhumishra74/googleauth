@@ -1,0 +1,41 @@
+.blogcard{
+    display:flex; 
+    align-items:center;
+    gap:10px
+}
+.blogcards{
+    display:flex; 
+    flex-direction: column;
+    align-items:center;
+    gap:10px;
+    width:280px;
+    height: 300px;
+}
+
+.blogcard .publishedat{
+    font-size: 10px;
+}
+
+.hrr:last-child{
+    display: none;
+}
+
+.blogcards_title{
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+@media only screen and (max-width: 768px){
+.blogcards{
+    flex-direction: row-reverse;
+    /* align-items: center; */
+    /* gap: 10px; */
+    width: 100%;
+    height: 150px;
+}
+}
